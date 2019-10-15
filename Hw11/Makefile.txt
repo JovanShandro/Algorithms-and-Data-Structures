@@ -1,0 +1,15 @@
+run1: ex1
+	./ex1
+
+ex1: optimal_meet_point.cpp
+	g++ -o ex1 optimal_meet_point.cpp
+
+run2: ex2
+	./ex2
+
+ex2: puzzle.cpp
+	g++ -o ex2 puzzle.cpp
+
+clear:
+	rm -f ex1
+	rm -f ex2
