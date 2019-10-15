@@ -1,0 +1,23 @@
+all: mult_bits run
+
+run:
+	./a
+
+mult_bits: mult_bits.o functions.o
+	g++ -o a mult_bits.o functions.o
+
+mult_bits.o: mult_bits.cpp functions.h
+	g++ -c mult_bits.cpp
+
+functions.o: functions.cpp functions.h
+	g++ -c functions.cpp
+
+compileonly: function.o mult_bits.o
+
+deleteofiles:
+	rm -f *.o
+
+deleteexec:
+	rm -f a
+
+deleteeverything: deleteofiles deleteexec
