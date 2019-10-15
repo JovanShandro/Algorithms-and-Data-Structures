@@ -1,5 +1,3 @@
-//Reference: https://www.youtube.com/watch?v=E6us4nmXTHs
-// I have implemented the algorithm described in the video above
 #include <bits/stdc++.h> 
 using namespace std; 
  
