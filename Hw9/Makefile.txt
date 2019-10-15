@@ -1,0 +1,16 @@
+all: run runactselprob delete
+
+run: a
+	./a
+
+runactselprob: b
+	./b
+
+a: HashTable.cpp HashTable.h testHashTable.cpp
+	g++ -o a HashTable.cpp HashTable.h testHashTable.cpp
+
+b: actselprob.cpp
+	g++ -o b actselprob.cpp
+
+delete:
+	rm -f a b

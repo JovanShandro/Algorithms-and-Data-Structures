@@ -1,0 +1,5 @@
+# Solution Walkthrough
+___
+In the pdf you will first find a sequence [3, 10, 2, 4] to which double hashing is applied using $h_1(k)\equiv k$ $mod$ $5$ and $h_2(k)\equiv 7k$ $mod$ $8$ to store them in a hash table of size m=5. The second exercise is an explanation of why a greedy choice of selecting the activity with the shortest duration may fail giving a globally optimal result for the activity-selection problem. 
+___
+The  files HashTable.h and HashTable.cpp contain the implementation of a hash table that supports insertion and querying with open addressing using linear probing. The cpp file testHashTable.cpp is for test purpose only and the actselprob.cpp implements a solution of the activity selection problem making the greedy choice of selecting the activity with the latest starting time. The solution should not just sort the activities and then select the activity.
