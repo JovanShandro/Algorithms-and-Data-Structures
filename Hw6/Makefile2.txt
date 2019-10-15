@@ -1,0 +1,10 @@
+all: run delete
+
+run: Radix.class 
+	java Radix
+
+Radix.class: Radix.java
+	javac Radix.java
+
+delete:
+	rm -f *.class

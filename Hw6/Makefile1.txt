@@ -1,0 +1,10 @@
+all: run delete
+
+run: LinearTimeSort.class 
+	java LinearTimeSort
+
+LinearTimeSort.class: LinearTimeSort.java
+	javac LinearTimeSort.java
+
+delete:
+	rm -f *.class
