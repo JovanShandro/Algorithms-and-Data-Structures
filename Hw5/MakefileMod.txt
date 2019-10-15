@@ -1,0 +1,10 @@
+all: run delete
+
+run: ModifiedQuicksort.class 
+	java ModifiedQuicksort
+
+ModifiedQuicksort.class: ModifiedQuicksort.java
+	javac ModifiedQuicksort.java
+
+delete:
+	rm -f *.class
