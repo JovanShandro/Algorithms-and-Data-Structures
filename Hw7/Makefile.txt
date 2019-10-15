@@ -1,0 +1,42 @@
+
+prob71: stackandqueue
+	./stackandqueue
+
+stackandqueue: test.o
+	g++ -o stackandqueue test.o
+
+test.o: Stack.h test.cpp
+
+
+
+prob72a: reverselist
+	./reverselist
+
+reverselist: LinkedList_reverse.o
+	g++ -o reverselist LinkedList_reverse.o
+
+LinkedList_reverse.o: LinkedList_reverse.cpp
+
+
+
+prob72bc: listandbst
+	./listandbst
+
+listandbst: Bst_and_list.o
+	g++ -o listandbst Bst_and_list.o
+
+Bst_and_list.o: Bst_and_list.cpp
+
+
+
+
+deleteo:
+	rm -f *.o
+
+deleteexec:
+	rm -f reverselist
+	rm -f stackandqueue
+	rm -f listandbst
+
+
+delete: deleteexec deleteo
