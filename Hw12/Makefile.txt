@@ -1,0 +1,15 @@
+run1: ex1
+	./ex1
+
+run2: ex2
+	./ex2
+
+ex1: nknights.cpp
+	g++ -o ex1 nknights.cpp
+
+ex2: rabin_karp.cpp
+	g++ -o ex2 rabin_karp.cpp
+
+clear:
+	rm -f ex1
+	rm -f ex2
