@@ -1,0 +1,19 @@
+all: run delete
+
+run: main
+	./main
+
+main: Rbtree.o rbt.o
+	g++ -o main Rbtree.o rbt.o
+
+Rbtree.o: Rbtree.cpp Rbtree.h
+
+rbt.o: rbt.cpp Rbtree.h
+
+deleteexec:
+	rm -f main
+
+deleteo:
+	rm -f *.o
+
+delete: deleteo deleteexec
